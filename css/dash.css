@@ -1,0 +1,330 @@
+body {
+    background: "";
+}
+
+
+
+.top {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    box-shadow: 0 7px 30px #000;
+    height    : 10%;
+    background: #b1a296;
+    z-index: 2;
+}
+
+
+.top .menu {
+    position     : absolute;
+    font-size    : x-large;
+    bottom       : 0;
+    margin-bottom: 20px;
+    margin-left  : 5%;
+    display      : none;
+    color        : black;
+}
+
+
+
+.top .welcome {
+    display     : flex;
+    float       : right;
+    margin-right: 3%;
+    margin-top  : 8px;
+}
+
+.top .welcome img {
+    border-radius: 50%;
+    width        : 50px;
+    height       : auto;
+    align-items  : center;
+    padding-left : 5px;
+}
+
+.top .welcome a {
+    font-size      : 25px;
+    color          : black;
+    /* margin-top  : 10px; */
+    padding-left   : 20px;
+}
+
+.top .welcome a:hover {
+    color    : red;
+    transform: scale(1.1);
+
+}
+
+.sidebar {
+    position        : fixed;
+    box-shadow      : 0 7px 30px#000;
+    left            : -36px;
+    top             : 10%;
+    bottom          : 0;
+    /* margin-top   :5%; */
+    background      : #b1a296;
+
+}
+
+.sidebar .line {
+    margin-left: -100%;
+    border     : 1px solid white;
+}
+
+.sidebar ul li {
+    display: block;
+
+    margin-right: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size      : 18px;
+    color          : black;
+
+}
+
+.sidebar ul li i {
+    font-size  : 40px;
+    padding-top: 30px;
+}
+
+.sidebar .logout {
+    position     : absolute;
+    margin-left  : 33%;
+    bottom       : 0;
+    margin-bottom: 5%;
+
+}
+
+.sidebar .logout a {
+    font-size      : 18px;
+    text-decoration: none;
+    color          : black;
+
+}
+
+.sidebar .logout i {
+    font-size: 35px;
+
+}
+
+.header {
+    margin-left : 20%;
+    margin-top  : 7%;
+    margin-right: 2%;
+    height      : 30px;
+
+}
+
+
+
+.main-container {
+    position     : absolute;
+    margin-left  : 20%;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 3%;
+    margin-right : 10%;
+    height       : auto;
+    border-radius: 1%;
+    right        : 0;
+    left         : 0;
+    display      : flex;
+    flex-wrap    : wrap;
+    background   : #8fc1e3;
+    z-index      : 1;
+}
+
+
+.main-container .container1 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 15%;
+    border-radius: 4%;
+    text-align   : center;
+    margin-bottom: 5%;
+    background   : #f7f9fb;
+}
+
+.main-container .container1 .content1 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+}
+
+.main-container .container2 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 10%;
+    border-radius: 4%;
+    text-align   : center;
+    background   : #f7f9fb;
+}
+
+.main-container .container2 .content2 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+}
+
+.main-container .container3 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 10%;
+    border-radius: 4%;
+    text-align   : center;
+    background   : #f7f9fb;
+}
+
+.main-container .container3 .content3 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        margin-top : 10%;
+        margin-left: 17%;
+    }
+
+    .main-container .container1,
+    .main-container .container2,
+    .main-container .container3 {
+        margin-left: 25%;
+    }
+
+    .main-container {
+        margin-left : 20%;
+        margin-right: 17%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .top {
+        height: 8%;
+    }
+
+    .top .menu {
+        display: block;
+    }
+
+    .top .welcome {
+        margin-right: 2%;
+    }
+
+    .top .welcome p {
+        display: none;
+    }
+
+    .top .welcome img {
+        width       : 35px;
+        padding-left: 3px;
+    }
+
+    .top .welcome a {
+        display: none;
+    }
+
+    .top .welcome a:hover {
+        transform: none;
+    }
+
+    .sidebar {
+        top       : 8%;
+        left      : -100%;
+        transition: all 0.3s ease-in-out;
+        z-index   : 999;
+        background      : #b1a296;
+    }
+
+    .sidebar.active {
+        left       : 0;
+        margin-left: -5%;
+    }
+
+    .sidebar ul li a {
+        font-size : 14px;
+        /* color     : white; */
+        margin-top: -5%;
+    }
+
+    .sidebar ul li i {
+        font-size  : 30px;
+        padding-top: 20px;
+
+    }
+
+    .sidebar .logout {
+        margin-left: 40%;
+    }
+
+    .sidebar .logout a {
+
+        font-size: 14px;
+
+    }
+
+    .sidebar .logout i {
+        font-size   : 25px;
+        margin-right: 5px;
+    }
+
+    .header {
+        margin-left : 2%;
+        margin-right: 2%;
+        margin-top  : 15%;
+    }
+
+    .header h1 {
+        font-size: larger;
+    }
+
+    .main-container {
+        position       : relative;
+        margin-left    : 5%;
+        margin-right: 5%;
+        margin-top     : 5%;
+        height         : auto;
+        display        : flex;
+        flex-direction : column;
+    }
+
+    
+   
+    .main-container .container1,
+    .main-container .container2,
+    .main-container .container3 {
+        height       : auto;
+        /* width     : 100%; */
+        margin-top   : 5%;
+        margin-left  : 20%;
+        margin-right : 0;
+        margin-bottom: 5%;
+        border-radius: 5%;
+    }
+
+    .main-container .container1 .content1,
+    .main-container .container2 .content2,
+    .main-container .container3 .content3 {
+        margin-bottom: 5%;
+        margin-top   : 5%;
+    }
+}

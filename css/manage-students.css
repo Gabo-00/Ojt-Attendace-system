@@ -1,0 +1,366 @@
+body {
+    background: "";
+  }
+  
+  
+  
+  .top {
+    position  : fixed;
+    top       : 0;
+    left      : 0;
+    right     : 0;
+    box-shadow: 0 7px 30px #000;
+    height    : 10%;
+    background: #b1a296;
+    z-index   : 2;
+  }
+  
+  
+  .top .menu {
+    position     : absolute;
+    font-size    : x-large;
+    bottom       : 0;
+    margin-bottom: 20px;
+    margin-left  : 5%;
+    display      : none;
+    color        : black;
+  }
+  
+  
+  
+  .top .welcome {
+    display     : flex;
+    float       : right;
+    margin-right: 3%;
+    margin-top  : 8px;
+  }
+  
+  .top .welcome img {
+    border-radius: 50%;
+    width        : 50px;
+    height       : auto;
+    align-items  : center;
+    padding-left : 5px;
+  }
+  
+  .top .welcome a {
+    font-size      : 25px;
+    color          : black;
+    /* margin-top  : 10px; */
+    padding-left   : 20px;
+  }
+  
+  .top .welcome a:hover {
+    color    : red;
+    transform: scale(1.1);
+  
+  }
+  
+  .sidebar {
+    position        : fixed;
+    box-shadow      : 0 7px 30px#000;
+    left            : -36px;
+    top             : 10%;
+    bottom          : 0;
+    /* margin-top   :5%; */
+    background      : #b1a296;
+  
+  }
+  
+  .sidebar .line {
+    margin-left: -100%;
+    border     : 1px solid white;
+  }
+  
+  .sidebar ul li {
+    display: block;
+  
+    margin-right: 15px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    font-size      : 18px;
+    color          : black;
+  
+  }
+  
+  .sidebar ul li i {
+    font-size  : 40px;
+    padding-top: 30px;
+  }
+  
+  .sidebar .logout {
+    position     : absolute;
+    margin-left  : 33%;
+    bottom       : 0;
+    margin-bottom: 5%;
+  
+  }
+  
+  .sidebar .logout a {
+    font-size      : 18px;
+    text-decoration: none;
+    color          : black;
+  
+  }
+  
+  .sidebar .logout i {
+    font-size: 35px;
+  
+  }
+  
+  .header {
+    margin-left : 20%;
+    margin-top  : 7%;
+    margin-right: 2%;
+    height      : 30px;
+  
+  }
+  
+  .main-container1 {
+    /* position     : absolute; */
+    margin-left  : 20%;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 3%;
+    margin-right : 10%;
+    height       : auto;
+    border-radius: 1%;
+    right        : 0;
+    left         : 0;
+  padding-top: 3%;
+    flex-wrap    : wrap;
+    background   : #8fc1e3;
+    z-index      : 1;
+    padding-bottom: 5%;
+    padding-left: 3%;
+  }
+  
+  .main-container1 .table1{
+    padding-left    : 5%;
+    padding-right   : 10%;
+    margin-bottom: 5%;
+    width           : 95%;
+    max-height      : calc(89% - 1.6rem);
+    background-color: #fffb;
+    margin       : .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+    overflow: overlay;
+    box-shadow   : 0 7px 20px#000;
+  }
+  
+
+  .table {
+    padding-left    : 5%;
+    padding-right   : 10%;
+    width           : 95%;
+    max-height      : calc(89% - 1.6rem);
+    background-color: #fffb;
+
+    margin       : .8rem auto;
+    border-radius: .6rem;
+  
+    overflow: auto;
+    overflow: overlay;
+  }
+
+  .table::-webkit-scrollbar {
+    width : 0.5rem;
+    height: 0.5rem;
+  }
+  
+  .table::-webkit-scrollbar-thumb {
+    border-radius   : .5rem;
+    background-color: #0004;
+    visibility      : hidden;
+  }
+  
+  .table:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+  }
+  
+
+  .main-container2 .container1 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 15%;
+    border-radius: 4%;
+    text-align   : center;
+    margin-bottom: 5%;
+    background   : #f7f9fb;
+  }
+  
+  .main-container2 .container1 .content1 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+  }
+  
+  .main-container2 .container2 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 10%;
+    border-radius: 4%;
+    text-align   : center;
+    background   : #f7f9fb;
+  }
+  
+  .main-container2 .container2 .content2 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+  }
+  
+  .main-container2 .container3 {
+    height       : 200px;
+    width        : 300PX;
+    box-shadow   : 0 7px 20px#000;
+    margin-top   : 8%;
+    margin-left  : 10%;
+    border-radius: 4%;
+    text-align   : center;
+    background   : #f7f9fb;
+  }
+  
+  .main-container2 .container3 .content3 {
+    height     : 50px;
+    width      : 150PX;
+    box-shadow : 0 7px 20px#000;
+    margin-left: 23%;
+    margin-top : 18%;
+    background : #f8e9a1;
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+    .header {
+      margin-top : 10%;
+      margin-left: 17%;
+    }
+  
+    .main-container2 .container1,
+    .main-container2 .container2,
+    .main-container2 .container3 {
+      margin-left: 25%;
+    }
+  
+    .main-container2 {
+      margin-left : 20%;
+      margin-right: 17%;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .main-container1{
+    margin-right: 5%;
+  }
+  .main-container2{
+    margin-right: 5%;
+  }
+  }
+  @media only screen and (max-width: 768px) {
+    .top {
+      height: 8%;
+    }
+  
+    .top .menu {
+      display: block;
+    }
+  
+    .top .welcome {
+      margin-right: 2%;
+    }
+  
+    .top .welcome p {
+      display: none;
+    }
+  
+    .top .welcome img {
+      width       : 35px;
+      padding-left: 3px;
+    }
+  
+    .top .welcome a {
+      display: none;
+    }
+  
+    .top .welcome a:hover {
+      transform: none;
+    }
+  
+    .sidebar {
+      top       : 8%;
+      left      : -100%;
+      transition: all 0.3s ease-in-out;
+      z-index   : 999;
+      /* background: #1f2c30; */
+    }
+  
+    .sidebar.active {
+      left       : 0;
+      margin-left: -5%;
+    }
+  
+    .sidebar ul li a {
+      font-size : 14px;
+
+      margin-top: -5%;
+    }
+  
+    .sidebar ul li i {
+      font-size  : 30px;
+      padding-top: 20px;
+
+    }
+  
+    .sidebar .logout {
+      margin-left: 40%;
+    }
+  
+    .sidebar .logout a {
+  
+      font-size: 14px;
+
+    }
+  
+    .sidebar .logout i {
+      font-size   : 25px;
+      margin-right: 5px;
+    }
+  
+    .header {
+      margin-left : 2%;
+      margin-right: 2%;
+      margin-top  : 15%;
+    }
+  
+    .header h1 {
+      font-size: larger;
+    }
+  
+    .main-container1 {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    /* .main-container1 .btn{
+       width: 100%;
+       padding-right: 5%;
+      } */
+
+    .table1 {
+      height: 600px;
+  
+    }
+  
+  }
